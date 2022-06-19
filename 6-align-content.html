@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-brn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Align Content</title>
+
+    <style>
+
+        body{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        h1{
+            color: red;
+        }
+
+        .container{
+            height: 450px;
+            max-width: 300px;
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid black;    
+        }
+
+        .item{
+            background-color: orangered;
+            padding: 0 5px;
+            margin: 5px;
+            flex: 1;
+            text-align: center;
+            color: white;
+            border: 2px solid black;
+        }
+
+        .strectch{
+            align-content: stretch;
+        }
+
+        .center{
+            align-content: center;
+        }
+
+        .start{
+            align-content: flex-start;
+        }
+
+        .end{
+            align-content: flex-end;
+        }
+
+        .around{
+            align-content: space-around;
+        }
+
+        .between{
+            align-content: space-between;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <h1>Stretch</h1>
+    <div class="container strectch">
+        <div class="item">Lorem, ipsum dolor sit amet consectetur </div>
+        <div class="item">Lorem, ipsum dolor sit</div>
+        <div class="item">Lorem, ipsum dolor sit haher kecatu</div>
+        <div class="item">Lorem, ipsum dolor sitLorem</div>
+        <div class="item">Lorem, ipsum dolor sitLorem</div>
+        <div class="item">Lorem, ipsum dolor sitLorem</div>
+        <div class="item">Lorem, ipsum dolor sitLorem, ipsum dolor sit</div>
+
+    </div>
+
+    <h1>Center</h1>
+    <div class="container center">
+        <div class="item">Lorem, ipsum dolor sit amet consectetur </div>
+        <div class="item">Lorem, ipsum dolor sit</div>
+        <div class="item">Lorem, ipsum dolor sit haher kecatu</div>
+        <div class="item">Lorem, ipsum dolor sitLorem</div>
+        <div class="item">Lorem, ipsum dolor sitLorem</div>
+        <div class="item">Lorem, ipsum dolor sitLorem</div>
+        <div class="item">Lorem, ipsum dolor sitLorem, ipsum dolor sit</div>
+
+    </div>
+
+    <h1>Flex Start</h1>
+    <div class="container start">
+        <div class="item">Lorem, ipsum dolor sit amet consectetur </div>
+        <div class="item">Lorem, ipsum dolor sit</div>
+        <div class="item">Lorem, ipsum dolor sit haher kecatu</div>
+        <div class="item">Lorem, ipsum dolor sitLorem</div>
+        <div class="item">Lorem, ipsum dolor sitLorem</div>
+        <div class="item">Lorem, ipsum dolor sitLorem</div>
+        <div class="item">Lorem, ipsum dolor sitLorem</div>
+
+    </div>
+
+    <h1>Flex End</h1>
+    <div class="container end">
+        <div class="item">Lorem, ipsum dolor sit amet consectetur </div>
+        <div class="item">Lorem, ipsum dolor sit</div>
+        <div class="item">Lorem, ipsum dolor sit haher kecatu</div>
+        <div class="item">Lorem, ipsum dolor sitLorem</div>
+        <div class="item">Lorem, ipsum dolor sitLorem</div>
+        <div class="item">Lorem, ipsum dolor sitLorem</div>
+        <div class="item">Lorem, ipsum dolor sitLorem</div>
+
+    </div>
+
+    <h1>Space-Around</h1>
+    <div class="container around">
+        <div class="item">Lorem, ipsum dolor sit amet consectetur </div>
+        <div class="item">Lorem, ipsum dolor sit</div>
+        <div class="item">Lorem, ipsum dolor sit haher kecatu</div>
+        <div class="item">Lorem, ipsum dolor sitLorem</div>
+        <div class="item">Lorem, ipsum dolor sitLorem</div>
+        <div class="item">Lorem, ipsum dolor sitLorem</div>
+        <div class="item">Lorem, ipsum dolor sitLorem</div>
+
+    </div>
+
+    <h1>Space-Between</h1>
+    <div class="container between">
+        <div class="item">Lorem, ipsum dolor sit amet consectetur </div>
+        <div class="item">Lorem, ipsum dolor sit</div>
+        <div class="item">Lorem, ipsum dolor sit haher kecatu</div>
+        <div class="item">Lorem, ipsum dolor sitLorem</div>
+        <div class="item">Lorem, ipsum dolor sitLorem</div>
+        <div class="item">Lorem, ipsum dolor sitLorem</div>
+        <div class="item">Lorem, ipsum dolor sitLorem</div>
+
+    </div>
+
+
+</body>
+</html>
